@@ -6,7 +6,7 @@ $factory->define(\App\Modules\Users\Models\User::class, function (Faker\Generato
     return [
         'name' => $faker->name,
         'email' => $faker->email,
-        'password' => $password ?: $password = bcrypt('lumenauth123'),
+        'password' => $password ?: $password = bcrypt('admin123'),
         'remember_token' => str_random(10),
     ];
 });

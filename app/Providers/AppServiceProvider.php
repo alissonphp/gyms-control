@@ -19,7 +19,6 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->register(LumenServiceProvider::class);
         $this->app->register(MongodbServiceProvider::class);
-        $this->app->register(SocialiteServiceProvider::class);
         $this->app->register(RedisServiceProvider::class);
         $this->app->register(RouteServiceProvider::class);
         $this->app->register(CommandsServiceProvider::class);

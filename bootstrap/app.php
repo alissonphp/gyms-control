@@ -14,7 +14,6 @@ $app = new Laravel\Lumen\Application(
 
 $app->withFacades(
     true, [
-        \Laravel\Socialite\Facades\Socialite::class => 'Socialite',
         \Tymon\JWTAuth\Facades\JWTAuth::class => 'JWTAuth',
         \Tymon\JWTAuth\Facades\JWTFactory::class => 'JWTFactory',
     ]
@@ -31,7 +30,6 @@ $app->singleton(
     App\Console\Kernel::class
 );
 
-$app->configure('services');
 $app->configure('jwt');
 $app->configure('auth');
 $app->configure('modules');
